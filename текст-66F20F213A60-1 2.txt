@@ -1,0 +1,219 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Орхидея -- магазин женской одежды</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      color: #2c2c2c;
+    }
+    header {
+      background-color: #e6d6eb;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom right, #f2e9f7, #fff);
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #7c4d94;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #444;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #7c4d94;
+    }
+    .categories, .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ddd;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+    .card p {
+      margin-bottom: 15px;
+      color: #777;
+    }
+    .card button {
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      background-color: #7c4d94;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #5e3970;
+    }
+    .about {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button[type="submit"] {
+      background-color: #7c4d94;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #5e3970;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: #f5f0f7;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Главная</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#about">О нас</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Орхидея</h1>
+  <p>Современная женская одежда с характером</p>
+</section>
+
+<section class="section" id="catalog">
+  <h2>Категории</h2>
+  <div class="categories">
+    <div class="card"><img src="https://via.placeholder.com/300x250?text=Платья" alt="Платья"><h3>Платья</h3></div>
+    <div class="card"><img src="https://via.placeholder.com/300x250?text=Костюмы" alt="Костюмы"><h3>Костюмы</h3></div>
+    <div class="card"><img src="https://via.placeholder.com/300x250?text=Аксессуары" alt="Аксессуары"><h3>Аксессуары</h3></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Новые поступления</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250?text=Платье+1" alt="Платье 1">
+      <h3>Летнее платье</h3>
+      <p>2 990 ₽</p>
+      <button>Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250?text=Костюм+2" alt="Костюм 2">
+      <h3>Костюм "Город"</h3>
+      <p>4 500 ₽</p>
+      <button>Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250?text=Платье+3" alt="Платье 3">
+      <h3>Платье миди</h3>
+      <p>3 700 ₽</p>
+      <button>Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250?text=Сумка" alt="Сумка">
+      <h3>Мини-сумка</h3>
+      <p>1 200 ₽</p>
+      <button>Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250?text=Очки" alt="Очки">
+      <h3>Солнцезащитные очки</h3>
+      <p>990 ₽</p>
+      <button>Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x250?text=Рубашка" alt="Рубашка">
+      <h3>Свободная рубашка</h3>
+      <p>2 300 ₽</p>
+      <button>Подробнее</button>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <h2>О нас</h2>
+  <p>Магазин «Орхидея» -- это пространство, где стиль встречается с комфортом. Мы отбираем лучшие модели женской одежды, чтобы вы могли чувствовать себя уверенно каждый день. Работаем с локальными брендами и заботимся о качестве каждой вещи.</p>
+</section>
+
+<section class="section" id="contact">
+  <h2>Связаться с нами</h2>
+  <form>
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="4" placeholder="Ваше сообщение"></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Магазин «Орхидея» -- Все права защищены.  
+</footer>
+
+</body>
+</html>
